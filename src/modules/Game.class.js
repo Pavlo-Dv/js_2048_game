@@ -125,7 +125,7 @@ class Game {
   restart() {
     this.score = 0;
     this.status = 'idle';
-    
+
     // eslint-disable-next-line
     this.board = Array.from({ length: this.size }, () => Array(this.size).fill(0));
   }
