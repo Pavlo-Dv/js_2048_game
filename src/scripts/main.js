@@ -40,6 +40,10 @@ function render() {
   msgLose.classList.toggle('hidden', statusOfGame !== 'lose');
   restartBtn.classList.toggle('hidden', statusOfGame === 'idle');
   startBtn.classList.toggle('hidden', statusOfGame === 'playing');
+
+  if (statusOfGame === 'lose') {
+    startBtn.classList.toggle('hidden');
+  }
 }
 
 startBtn.addEventListener('click', (e) => {
